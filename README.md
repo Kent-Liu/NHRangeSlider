@@ -19,12 +19,11 @@ A custom range slider in Swift. Well-documented with examples. Forked from [Rang
 > CocoaPods 1.1.0+ is required to build NHRangeSlider.
 
 ```ruby
-source 'https://github.com/CocoaPods/Specs.git'
 platform :ios, '10.0'
 use_frameworks!
 
 target '<Your Target Name>' do
-    pod 'NHRangeSlider', '~> 0.2'
+    pod 'NHRangeSlider', :git => 'https://github.com/Kent-Liu/NHRangeSlider'
 end
 ```
 
@@ -33,17 +32,6 @@ Then, run the:
 ```bash
 $ pod install
 ```
-
-### Carthage
-
-Put the following in your Cartfile:
-
-```ogdl
- github "thehung111/NHRangeSlider" ~> 0.2
-```
- 
-Run `carthage update --platform iOS --no-use-binaries` 
-
 
 ### Manual
 
