@@ -150,7 +150,7 @@ open class NHRangeSlider: UIControl {
     
     
     /// stepValue. If set, will snap to discrete step points along the slider . Default to nil
-    @IBInspectable open var stepValue: Double? = nil {
+    open var stepValue: Double? = nil {
         willSet(newValue) {
             if newValue != nil {
                 assert(newValue! > 0, "NHRangeSlider: stepValue must be positive")
