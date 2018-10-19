@@ -143,7 +143,7 @@ open class NHRangeSliderView: UIView {
     
     
     /// thumb border width
-    @IBInspectable open var thumbBorderWidth: CGFloat = 0.5 {
+    open var thumbBorderWidth: CGFloat = 0.5 {
         didSet {
             self.rangeSlider?.thumbBorderWidth = thumbBorderWidth
 
@@ -151,7 +151,7 @@ open class NHRangeSliderView: UIView {
     }
     
     /// set 0.0 for square thumbs to 1.0 for circle thumbs
-    @IBInspectable open var curvaceousness: CGFloat = 1.0 {
+    open var curvaceousness: CGFloat = 1.0 {
         didSet {
             self.rangeSlider?.curvaceousness = curvaceousness
         }
@@ -339,7 +339,7 @@ open class NHRangeSliderView: UIView {
     private func estimatelabelSize(font: UIFont,string: String, constrainedToWidth width: Double) -> CGSize{
         return string.boundingRect(with: CGSize(width: width, height: DBL_MAX),
                                    options: NSStringDrawingOptions.usesLineFragmentOrigin,
-                                   attributes: [NSFontAttributeName: font],
+                                   attributes: [NSAttributedStringKey.font: font],
                                    context: nil).size
 
     }
