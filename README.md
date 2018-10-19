@@ -9,8 +9,8 @@ A custom range slider in Swift. Well-documented with examples. Forked from [Rang
 ## Requirements
 
 - iOS: 8.0+
-- Xcode 8.1+
-- Swift 3.0+
+- Xcode 10.0+
+- Swift 4.2+
 
 ## Installation
 
