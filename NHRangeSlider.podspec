@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "NHRangeSlider"
-  s.version      = "0.2"
+  s.version      = "0.2.1"
   s.summary      = "A custom range slider in Swift."
 
   s.description  = <<-DESC
