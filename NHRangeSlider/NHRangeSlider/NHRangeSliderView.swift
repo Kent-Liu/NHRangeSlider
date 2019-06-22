@@ -262,7 +262,7 @@ open class NHRangeSliderView: UIView {
             let commonWidth = self.bounds.width
             var titleLabelMaxY : CGFloat = 0
             
-            if !titleLabel.isHidden && titleLabel.text != nil && titleLabel.text!.characters.count > 0 {
+            if !titleLabel.isHidden && titleLabel.text != nil && titleLabel.text!.count > 0 {
                 titleLabel.frame = CGRect(x: 0,
                                           y: 0,
                                           width: commonWidth  ,
@@ -316,7 +316,7 @@ open class NHRangeSliderView: UIView {
             
             var titleLabelMaxY : CGFloat = 0
             
-            if !titleLabel.isHidden && titleLabel.text != nil && titleLabel.text!.characters.count > 0 {
+            if !titleLabel.isHidden && titleLabel.text != nil && titleLabel.text!.count > 0 {
                 titleLabelMaxY = titleLabel.font.lineHeight + self.spacing
             }
             
