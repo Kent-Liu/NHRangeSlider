@@ -411,5 +411,13 @@ open class NHRangeSlider: UIControl {
         
         
     }
+  
+  open override func gestureRecognizerShouldBegin(_ gestureRecognizer: UIGestureRecognizer) -> Bool {
+    if gestureRecognizer is UIPanGestureRecognizer {
+      return false
+    } else {
+      return true
+    }
+  }
     
 }
